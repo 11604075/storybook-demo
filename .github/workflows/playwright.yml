@@ -44,8 +44,7 @@ jobs:
           path: tests/screenshots  # Change this if your screenshots are saved elsewhere
           retention-days: 7
 
-      - name: Publish to Chromatic
-        run: npx chromatic --project-token=chpt_8243c45f6b9dc13
+    
 
   comment-diff:
     name: "Comment PR with Diff Images"
