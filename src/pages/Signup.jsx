@@ -12,7 +12,7 @@ function Signup() {
         <form>
         <Input placeholder="Email Address"/>
         <Input placeholder="password"/>
-        <Button name="Create Account"/>
+        <Button name="Create Account" onClick={()=>console.log("hii")}/>
         </form>
     
         </div>

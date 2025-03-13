@@ -1,4 +1,5 @@
 import Input from "./Input";
+import { action } from "@storybook/addon-actions";
 
 export default {
   title: 'Form/Input',
@@ -7,8 +8,10 @@ export default {
 }
 export const NameInput = {
   args: {
-    placeholder: 'Enter Your Name',
-    type:"text"
+    placeholder: "Enter Your Name",
+    type:"text",
+    onChange: action("Name input changed"), 
+
   },
 };
 
@@ -16,6 +19,7 @@ export const NameInput = {
 export const AgeInput = {
   args: {
     placeholder: 'Enter Your Age',
-    type:"number"
+    type:"number",
+    onChange: action("Age input changed"), 
   },
 };
